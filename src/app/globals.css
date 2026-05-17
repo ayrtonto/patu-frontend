@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tu paleta de colores Patu */
+  --color-patu-50: #fff7ed;
+  --color-patu-100: #ffedd5;
+  --color-patu-200: #fed7aa;
+  --color-patu-300: #fdba74;
+  --color-patu-400: #fb923c;
+  --color-patu-500: #f97316;
+  --color-patu-600: #ea580c;
+  --color-patu-700: #c2410c;
+  --color-patu-800: #9a3412;
+  --color-patu-900: #7c2d12;
+}
+
+/* Clases utilitarias que tenías en tu proyecto original */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
