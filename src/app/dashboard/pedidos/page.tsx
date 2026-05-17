@@ -67,7 +67,7 @@ export default function GestionPedidosPage() {
     try {
       const payload = { estado, ...(codigo ? { codigo_seguimiento: codigo } : {}) };
 
-      const res = await fetch(`http://localhost:3000/pedidos/${idPedido}/estado`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/pedidos/${idPedido}/estado`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
