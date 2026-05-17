@@ -31,7 +31,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const res = await fetch("http://localhost:3000/productos");
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/productos`);
         if (res.ok) {
           const data = await res.json();
           setProductos(data);
